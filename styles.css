@@ -1,0 +1,413 @@
+/* This part applies to all media screen sizes */
+* {
+  margin: 00;
+  padding: 00;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #3c4043;
+  font-family: "Raleway", sans-serif;
+}
+header {
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-start;
+  justify-content: flex-end;
+  height: 12vh;
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: #3c4043;
+}
+a:hover {
+  text-decoration: underline;
+}
+header nav {
+  min-width: 160px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  display: inline;
+}
+.dot {
+  margin-top: -3px;
+}
+.nine-dots {
+  width: 20px;
+  display: inline;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 76vh;
+  width: 100%;
+}
+footer {
+  margin-top: 3vh;
+  height: 9vh;
+}
+
+/* Applies to screens at 600px width and below */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.4rem;
+  }
+  header {
+    width: 100vw;
+    padding: 8px;
+  }
+  header nav {
+    min-width: 120px;
+  }
+  .nine-dots img {
+    height: 10px;
+  }
+  .fig-class {
+    width: 190px;
+  }
+  .sign-up {
+    padding: 3px 9px;
+    background-color: rgb(47, 129, 252);
+    color: white;
+    font-size: 0.41rem;
+    border-radius: 2px;
+  }
+  form {
+    width: 70%;
+    text-align: center;
+  }
+  label {
+    display: block;
+    height: 25px;
+    border: #daddddc0 solid 1px;
+    border-radius: 25px;
+  }
+  .fas {
+    font-size: 0.7rem;
+  }
+  input {
+    height: 23px;
+    outline: none;
+    border: none;
+    width: 80%;
+  }
+  button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    height: 20px;
+    min-width: 56px;
+    padding: 0 10px;
+    font-size: 0.45rem;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    color: #3c4043;
+  }
+  .texts {
+    margin-top: 10px;
+  }
+  .texts span a {
+    color: #1a0dab;
+    padding: 0 3px;
+  }
+  footer {
+    background-color: rgba(218, 216, 216, 0.295);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  footer p {
+    padding: 8px 5px;
+  }
+  .footer-nav {
+    border-top: 1px solid #dadce0;
+    padding: 8px 10px 5px 10px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-nav-span {
+    width: 55vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+  .footer-nav-ul1 {
+    width: 55vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-nav-ul2 {
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/* Applies to screen sizes of 601px width and above */
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 0.65rem;
+    color: #3c4043;
+  }
+  header {
+    width: 100vw;
+    padding: 15px 10px;
+    height: 21vh;
+  }
+  header nav {
+    min-width: 210px;
+  }
+  .nine-dots {
+    width: 10px;
+    display: inline;
+  }
+  .nine-dots img {
+    height: 15px;
+  }
+  .sign-up {
+    padding: 8px 22px;
+    background-color: rgb(47, 129, 252);
+    color: white;
+    font-size: 0.62rem;
+    border-radius: 3px;
+  }
+  main {
+    height: 67vh;
+  }
+  .fig-class {
+    width: 190px;
+  }
+  form {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  label {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    height: 35px;
+    border: #daddddc0 solid 1px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
+  .fas {
+    font-size: 0.9rem;
+  }
+  input {
+    height: 33px;
+    outline: none;
+    border: none;
+    width: 85%;
+  }
+  button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    height: 20px;
+    min-width: 56px;
+    padding: 8px 10px;
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    color: #3c4043;
+  }
+  .texts {
+    margin-top: 20px;
+  }
+  .texts span a {
+    color: #1a0dab;
+    padding: 0 3px;
+  }
+  footer {
+    background-color: rgba(218, 216, 216, 0.295);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  footer {
+    margin-top: 2vh;
+    height: 10vh;
+  }
+  footer p {
+    padding: 8px 5px;
+  }
+  .footer-nav {
+    border-top: 1px solid #dadce0;
+    padding: 8px 10px 3px 10px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-nav-span {
+    width: 55vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -18px;
+  }
+  .footer-nav-ul1 {
+    width: 55vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-nav-ul2 {
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/* Applies to screen sizes of 992px width and above. Inherits properties from the previous media query*/
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 0.89rem;
+  }
+  header {
+    height: 19vh;
+    padding: 25px 10px;
+  }
+  header nav {
+    min-width: 285px;
+  }
+  .nine-dots img {
+    height: 20px;
+  }
+  .sign-up {
+    padding: 9px 24px;
+    background-color: rgb(47, 129, 252);
+    color: white;
+    font-size: 0.85rem;
+    border-radius: 3px;
+  }
+  main {
+    height: 69vh;
+  }
+  form {
+    width: 70%;
+  }
+  label {
+    height: 45px;
+  }
+  .fas {
+    font-size: 1rem;
+  }
+  input {
+    height: 43px;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+  .texts {
+    margin-top: 25px;
+  }
+  footer {
+    margin-top: 2vh;
+    height: 10vh;
+  }
+  footer p {
+    padding: 5px 33px 10px 33px;
+  }
+  .footer-nav {
+    padding: 20px 50px 0px 50px;
+    height: 95px;
+  }
+  .footer-nav-span {
+    margin-bottom: -23px;
+  }
+  .footer-nav-ul1 {
+    width: 45vw;
+  }
+  .footer-nav-ul2 {
+    width: 25vw;
+  }
+  .fig-class {
+    width: 270px;
+  }
+}
+
+/* Applies to screen sizes of 1200px width and above. Inherits properties from the previous media query*/
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 0.8rem;
+  }
+  header {
+    height: 27vh;
+  }
+  header nav {
+    min-width: 300px;
+  }
+  .nine-dots img {
+    height: 25px;
+  }
+  main {
+    height: 61vh;
+  }
+  form {
+    width: 40%;
+  }
+  label {
+    height: 45px;
+  }
+  .fas {
+    font-size: 0.9rem;
+  }
+  input {
+    height: 43px;
+  }
+  button {
+    font-size: 0.91rem;
+  }
+  .fas {
+    font-size: 1.2rem;
+  }
+  .texts {
+    margin-top: 30px;
+  }
+  footer p {
+    padding: 5px 5px 27px 33px;
+  }
+  .footer-nav {
+    border-top: 1px solid #dadce0;
+    padding: 8px 33px 3px 33px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-nav-span {
+    width: 40vw;
+    margin-bottom: -38px;
+  }
+  .footer-nav-ul1 {
+    width: 18vw;
+    justify-content: space-between;
+  }
+  .footer-nav-ul2 {
+    width: 10vw;
+    justify-content: space-between;
+  }
+}
