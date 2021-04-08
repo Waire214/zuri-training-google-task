@@ -61,6 +61,7 @@ footer {
 }
 
 /* Applies to screens at 600px width and below */
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 0.4rem;
@@ -162,11 +163,25 @@ footer {
   }
 }
 
+/* Landscape orientation for 600px device width and below */
+
+@media screen and (max-device-width: 600px) and (orientation: landscape) {
+  main {
+    height: 60vh;
+  }
+  footer {
+    margin-top: 2vh;
+    height: 17vh;
+  }
+}
+
 /* Applies to screen sizes of 601px width and above */
+
 @media only screen and (min-width: 601px) {
   body {
     font-size: 0.65rem;
     color: #3c4043;
+    min-height: 100%;
   }
   header {
     width: 100vw;
@@ -248,7 +263,7 @@ footer {
   }
   footer {
     margin-top: 2vh;
-    height: 10vh;
+    height: 12vh;
   }
   footer p {
     padding: 8px 5px;
@@ -256,7 +271,7 @@ footer {
   .footer-nav {
     border-top: 1px solid #dadce0;
     padding: 8px 10px 3px 10px;
-    height: 65px;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -281,7 +296,20 @@ footer {
   }
 }
 
+/* Landscape orientation for 601px device width and above */
+
+@media screen and (min-device-width: 601px) and (orientation: landscape) {
+  main {
+    height: 60vh;
+  }
+  footer {
+    margin-top: 2vh;
+    height: 17vh;
+  }
+}
+
 /* Applies to screen sizes of 992px width and above. Inherits properties from the previous media query*/
+
 @media only screen and (min-width: 992px) {
   body {
     font-size: 0.89rem;
@@ -350,6 +378,7 @@ footer {
 }
 
 /* Applies to screen sizes of 1200px width and above. Inherits properties from the previous media query*/
+
 @media only screen and (min-width: 1200px) {
   body {
     font-size: 0.8rem;
